@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/e4401fe6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Vision Photo Event</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+      style="filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25))"
+    >
+      <div class="container">
+        <a class="navbar-brand text-center" href="#">
+          <!-- Vision <br />
+          Photo Event -->
+          <img src="./assets/logo.png" style="height: 70px" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#bemutatkozas"
+                >Bemutatkozás</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#info">Selfiebox Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ajanlatok">Csomagajánlatok</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hatterek">Hátterek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rendeles">Megrendelés</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kapcsolat">Kapcsolat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gyik">GYIK</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="margin-top: 1rem; margin-bottom: 5rem">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/slider-1.jpg"
+              class="d-block w-100 rounded"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/slider-2.jpg"
+              class="d-block w-100 rounded"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/slider-3.jpg"
+              class="d-block w-100 rounded"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/slider-4.jpg"
+              class="d-block w-100 rounded"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/slider-5.jpg"
+              class="d-block w-100 rounded"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-12 col-lg-8">
+          <h1 id="bemutatkozas">
+            SELFIEBOX bérlés rendezvényre és esküvőre, rendkívül kedvező áron!
+          </h1>
+          <p class="mt-4">
+            Feldobnád céges rendezvényedet, vagy kézzelfogható emléket szeretnél
+            az esküvőtökről? <br />
+            Akkor jó helyen jársz! <br />
+            Hozd össze a vendégeket és dobd fel a parti hangulatát egy
+            szempillantás alatt! <br />
+            Nincs más dolgotok, kedvetekre választani a megannyi vicces
+            kiegészítő közül, megtalálni a legjobb beállást, és már kezetekbe is
+            foghatjátok a buli legjobb képeit! <br />
+            Korlátlan képkészítés és fotónyomtatás, rendkívüli akciók és minden
+            tekintetben profizmus!
+          </p>
+        </div>
+        <div class="col-12 col-lg-4">
+          <img
+            src="./assets/pexels-julia-larson-6113632 1.png"
+            alt=""
+            class="img-fluid d-block mx-auto"
+            style="max-height: 450px"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container margin-1">
+      <div class="row align-items-center">
+        <h1 class="mb-4" id="info">Mi is az a Selfiebox?!</h1>
+        <div class="vonal2" style="margin: 0 auto 2rem 3rem"></div>
+        <p class="mb-5">
+          Egy professzionális technikával felépített automata fotógép, ami a
+          helyszínen történő azonnali fotónyomtatásra is alkalmas. Természetesen
+          az elkészült képeket elektronikus formában is megkapjátok tőlünk!
+          <br />
+
+          Különféle rendezvényekre és esküvőkre is kölcsönözhetitek. <br />
+
+          8 féle háttérből választhattok, és vicces kiegészítőkkel még
+          szórakoztatóbbá tehetitek kedvenc képeiteket!
+        </p>
+        <div class="col-12 col-lg-4 mt-5">
+          <img
+            src="./assets/selfiebox.png"
+            style="max-height: 450px"
+            alt=""
+            class="img-fluid mx-auto d-block"
+          />
+        </div>
+        <div class="col-12 col-lg-8">
+          <h3 class="mt-4">A selfiebox működése:</h3>
+          <p>
+            A selfiebox kezelése egyszerű. Érintőképernyőn történik, amin a
+            megfelelő utasítások segítenek a legjobb kép elkészítéséhez.
+          </p>
+          <ol>
+            <li>Válasszatok vicces kiegészítőket, majd álljatok a box elé!</li>
+            <li>
+              A start gomb érintésével elkezdődik a visszaszámlálás (3-5 mp)!
+            </li>
+            <li>
+              A többi már csak a ti mosolyotokon múlik! 😊 Belepislogtál? Semmi
+              gond! Addig készíthetitek a képeket, amíg a legmegfelelőbb nem
+              lesz!
+            </li>
+            <li>
+              Pár másodperc, és már a kezetekben is tarthatjátok az elkészült
+              képet!
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="container margin-1">
+      <div class="row mt-5 align-items-center">
+        <h1 class="text-center mb-5" id="ajanlatok">Csomagajánlataink</h1>
+        <div class="vonal2"></div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="scard mx-auto">
+              <h2 class="text-center mt-5 mb-4">Bronz</h1>
+              <div class="vonal mb-4"></div>
+              <ul class="mx-4">
+                <li class="my-3 costumlist">3 órarendelkezésre állás</li>
+                <li class="my-3">Korlátlan mennyiségű fotó készítés</li>
+                <li class="my-3">Korlátlan mennyiségű fotónyomtatás</li>
+              </ul>
+              <h2 class="text-center my-5">60 000 Ft</h2>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="scard mx-auto">
+              <h2 class="text-center mt-5 mb-4">Silver</h1>
+              <div class="vonal mb-4"></div>
+              <ul class="mx-4">
+                <li class="my-3 costumlist">4 órarendelkezésre állás</li>
+                <li class="my-3">Korlátlan mennyiségű fotó készítés</li>
+                <li class="my-3">Korlátlan mennyiségű fotónyomtatás</li>
+              </ul>
+              <h2 class="text-center my-5">70 000 Ft</h2>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="scard mx-auto">
+              <h2 class="text-center mt-5 mb-4">Gold</h1>
+              <div class="vonal mb-4"></div>
+              <ul class="mx-4">
+                <li class="my-3 costumlist">5 órarendelkezésre állás</li>
+                <li class="my-3">Korlátlan mennyiségű fotó készítés</li>
+                <li class="my-3">Korlátlan mennyiségű fotónyomtatás</li>
+              </ul>
+              <h2 class="text-center my-5">80 000 Ft</h2>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="scard mx-auto">
+              <h2 class="text-center mt-5 mb-4">Diamond</h1>
+              <div class="vonal mb-4"></div>
+              <ul class="mx-4">
+                <li class="my-3 costumlist">6 órarendelkezésre állás</li>
+                <li class="my-3">Korlátlan mennyiségű fotó készítés</li>
+                <li class="my-3">Korlátlan mennyiségű fotónyomtatás</li>
+              </ul>
+              <h2 class="text-center my-5">90 000 Ft</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container margin-1">
+      <h1 class="text-center mb-5">A csomag tartalma</h1>
+      <div class="vonal2"></div>
+      <div class="row text-center justify-content-center g-5">
+        <div class="col-12 col-lg-4 col-md-6">
+          <i class="fa fa-camera fa-2x mb-2" aria-hidden="true"></i>
+          <h5>Korlátlan fotókészítés</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+            eveniet consequatur est quod delectus laudantium!
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <i class="fa fa-camera fa-2x mb-2" aria-hidden="true"></i>
+          <h5>Korlátlan fotókészítés</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+            eveniet consequatur est quod delectus laudantium!
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <i class="fa fa-camera fa-2x mb-2" aria-hidden="true"></i>
+          <h5>Korlátlan fotókészítés</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+            eveniet consequatur est quod delectus laudantium!
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <i class="fa fa-camera fa-2x mb-2" aria-hidden="true"></i>
+          <h5>Korlátlan fotókészítés</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+            eveniet consequatur est quod delectus laudantium!
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <i class="fa fa-camera fa-2x mb-2" aria-hidden="true"></i>
+          <h5>Korlátlan fotókészítés</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+            eveniet consequatur est quod delectus laudantium!
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <i class="fa fa-camera fa-2x mb-2" aria-hidden="true"></i>
+          <h5>Korlátlan fotókészítés</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+            eveniet consequatur est quod delectus laudantium!
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <i class="fa fa-camera fa-2x mb-2" aria-hidden="true"></i>
+          <h5>Korlátlan fotókészítés</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+            eveniet consequatur est quod delectus laudantium!
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <i class="fa fa-camera fa-2x mb-2" aria-hidden="true"></i>
+          <h5>Korlátlan fotókészítés</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+            eveniet consequatur est quod delectus laudantium!
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <i class="fa fa-camera fa-2x mb-2" aria-hidden="true"></i>
+          <h5>Korlátlan fotókészítés</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+            eveniet consequatur est quod delectus laudantium!
+          </p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 align-self-center">
+          <i class="fa fa-camera fa-2x mb-2" aria-hidden="true"></i>
+          <h5>Korlátlan fotókészítés</h5>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos
+            eveniet consequatur est quod delectus laudantium!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+          <img
+            src="./assets/party-photo-collection-2.png"
+            class="img-fluid mx-auto d-block"
+            alt=""
+          />
+        </div>
+        <div class="col-12 col-md-6">
+          <h2 class="mb-4">Prémium szolgáltatások</h2>
+          <p>
+            Egyedi, személyre szabott kereteket / logókat / sablonokat kérhettek
+            képeitekre, csomagonként plusz 5000 Ft-ért. <br />
+            <br />
+            Kiszállás díja Budapesten kívül / vidéken: 60 Ft/km. <br />
+            <br />
+            Extra plusz óra a választott csomaghoz: 20 000 Ft/óra. <br />
+            <br />
+            Képek korlátlan másolata: Az alapcsomag minden képnek 1 nyomtatását
+            foglalja magába. A másolatok díja: 5 000 Ft/csomag. <br />
+            <br />
+            Készenléti idő: Ha a csomagajánlatban szereplő idő félbeszakítható
+            egy órás készenléti idővel. (Például ha a vacsora alatt
+            szüneteltetni szeretnétek a szolgáltatást.) Díja: 5 000 Ft/csomag.
+            <br />
+            <br />
+            A feltüntetett árak alanyi adómentesek, tehát bruttó áraknak
+            tekinthetőek!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container margin-1">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-6">
+          <h2 class="mb-4">Amire a helyszínen szükségünk van:</h2>
+          <ul>
+            <li>
+              legalább 2x2 méteres területre, ahova felállíthatjuk a gépet és a
+              kellékeket.
+            </li>
+            <li>áramforrásra a fotóautomata működtetéséhez.</li>
+            <li>
+              egy asztalra, amire kihelyezhetjük a választható kiegészítőket.
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6">
+          <img
+            src="./assets/party-photo-collection-3.png"
+            class="img-fluid mx-auto d-block"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container margin-1">
+      <div class="row justify-content-center">
+        <h1 class="text-center mb-4" id="hatterek">Választható hátterek</h1>
+        <div class="vonal2"></div>
+        <h3 class="text-center mb-5">Szatén függöny</h3>
+        <div class="col-12 col-lg-4 col-md-6">
+          <img
+            src="./assets/szaten_pezsgo.png"
+            class="img-fluid d-block mx-auto rounded box-shadow"
+            alt=""
+          />
+          <p class="text-center mt-2">Pezsgő</p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <img
+            src="./assets/szaten_grafit.png"
+            class="img-fluid d-block mx-auto rounded box-shadow"
+            alt=""
+          />
+          <p class="text-center mt-2">Grafit</p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <img
+            src="./assets/szaten_puder.png"
+            class="img-fluid d-block mx-auto rounded box-shadow"
+            alt=""
+          />
+          <p class="text-center mt-2">Púderrózsaszín</p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <img
+            src="./assets/szaten_bordo.png"
+            class="img-fluid d-block mx-auto rounded box-shadow"
+            alt=""
+          />
+          <p class="text-center mt-2">Bordó</p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <img
+            src="./assets/szaten_ekru.png"
+            class="img-fluid d-block mx-auto rounded box-shadow"
+            alt=""
+          />
+          <p class="text-center mt-2">Ekrü</p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <img
+            src="./assets/szaten_arany.png"
+            class="img-fluid d-block mx-auto rounded box-shadow"
+            alt=""
+          />
+          <p class="text-center mt-2">Arany</p>
+        </div>
+
+        <h3 class="text-center mb-5">Party függöny</h3>
+        <div class="col-12 col-lg-4 col-md-6">
+          <img
+            src="./assets/party_ezust.png"
+            class="img-fluid d-block mx-auto rounded box-shadow"
+            alt=""
+          />
+          <p class="text-center mt-2">Ezüst</p>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6">
+          <img
+            src="./assets/party_rose_gold.jpg"
+            class="img-fluid d-block mx-auto rounded box-shadow"
+            alt=""
+          />
+          <p class="text-center mt-2">Rose gold</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORM -->
+
+    <div class="container margin-1">
+      <h1 class="mb-4" id="rendeles">Megrendelés</h1>
+      <p>
+        A megrendeléshez kérjük add meg a saját, és rendezvényed adatait. A
+        megrendelés elküldése után hamarosan felvesszük veled a kapcsolatot a
+        megadott elérhetőségek egyikén. A foglalás csak a visszaigazoló e-mail
+        után válik érvényessé!
+      </p>
+
+      <form class="row" action="">
+        <fieldset>
+          <legend>Általános adatok</legend>
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-4 col-md-6">
+              <div class="mb-3">
+                <label for="name" class="form-label">Név:</label>
+                <input type="name" class="form-control" id="name" />
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6">
+              <div class="mb-3">
+                <label for="telefon" class="form-label">Telefonszám:</label>
+                <input type="tel" class="form-control" id="telefon" />
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6">
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail cím:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Esemény adatai</legend>
+          <div class="row align-items-center">
+            <div class="col-12 col-lg-4 col-md-6">
+              <div class="mb-3">
+                <label for="date" class="form-label">Rendezvény dátuma:</label>
+                <input type="date" class="form-control" id="date" />
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6">
+              <div class="mb-3">
+                <label for="helyszin" class="form-label"
+                  >Rendezvény helyszíne:</label
+                >
+                <input type="text" class="form-control" id="helyszin" />
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6">
+              <label for="tipus" class="mb-2">Rendezvény típusa:</label>
+              <select
+                class="form-select mb-3"
+                id="tipus"
+                aria-label="Default select example"
+              >
+                <option selected>Esküvő</option>
+                <option value="1">Céges rendezvény</option>
+                <option value="2">Privát rendezvény</option>
+                <option value="3">Egyéb</option>
+              </select>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6">
+              <label for="letszam" class="mb-2">Várható létszám:</label>
+              <select
+                class="form-select mb-3"
+                id="letszam"
+                aria-label="Default select example"
+              >
+                <option selected>0-100</option>
+                <option value="1">100-200</option>
+                <option value="2">200-300</option>
+                <option value="3">300-400</option>
+                <option value="3">400-500</option>
+                <option value="3">500 felett</option>
+              </select>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6">
+              <label for="csomag" class="mb-2">Várható csomag:</label>
+              <select
+                class="form-select mb-3"
+                id="csomag"
+                aria-label="Default select example"
+              >
+                <option selected>Bronz</option>
+                <option value="1">Silver</option>
+                <option value="2">Gold</option>
+                <option value="3">Diamond</option>
+              </select>
+            </div>
+            <div class="col-12 col-lg-4 col-md-6">
+              <label for="hatter" class="mb-2">Várható háttér:</label>
+              <select
+                class="form-select mb-3"
+                id="hatter"
+                aria-label="Default select example"
+              >
+                <option selected>Pezsgő</option>
+                <option value="1">Grafit</option>
+                <option value="2">Púderrózsaszín</option>
+                <option value="3">Bordó</option>
+                <option value="3">Ekrü</option>
+                <option value="3">Arany</option>
+                <option value="3">Ezüst</option>
+                <option value="3">Rose gold</option>
+              </select>
+            </div>
+          </div>
+          <div class="row gx-5">
+            <div class="col-lg-6 col-12">
+              <div class="mb-3">
+                <label for="megjegyzes" class="mb-2">Megjegyzés:</label>
+                <textarea
+                  class="form-control"
+                  id="megjegyzes"
+                  rows="10"
+                  placeholder="Megjegyzés"
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-lg-5 col-12">
+              <label for="egyedilogo" class="form-label mt-4"
+                >Prémium szolgáltatás:</label
+              >
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="egyedilogo"
+                />
+                <label class="form-check-label" for="egyedilogo">
+                  Egyedi logó
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="egyedikeret"
+                />
+                <label class="form-check-label" for="egyedikeret">
+                  Egyedi keret
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="videk"
+                />
+                <label class="form-check-label" for="videk">
+                  Kiszállás vidéken
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="pluszora"
+                />
+                <label class="form-check-label" for="pluszora">
+                  Plusz óra
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="korlátlanmasolat"
+                />
+                <label class="form-check-label" for="korlátlanmasolat">
+                  Képek korlátlan másolata
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="kltido"
+                />
+                <label class="form-check-label" for="kltido">
+                  Készenléti idő
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-check mt-5">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="adatkezeles"
+            />
+            <label class="form-check-label" for="adatkezeles">
+              Elolvastam és elfogadom az
+              <a href="#">Adatkezelési Tájékoztatóban</a> foglaltakat!
+            </label>
+          </div>
+          <div class="col-12 my-3">
+            <button class="btn btn-primary" type="submit">Megrendelés</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="container margin-1">
+      <div class="row text-center">
+        <div class="col-12 mb-4">
+          <h1 id="kapcsolat">Elérhetőségeink</h1>
+        </div>
+        <div class="col-12 col-lg-6">
+          <h4>Telefon:</h4>
+          <p>+36 30 569 3000</p>
+        </div>
+        <div class="col-12 col-lg-6">
+          <h4>E-mail:</h4>
+          <p>info@visionphotoevent.hu</p>
+        </div>
+      </div>
+    </div>
+    <div class="container margin-1">
+      <h1 class="mb-5" id="gyik">Gyakran ismételt kérdések</h1>
+      <h3 class="mt-3">1. Mekkora méretű képeket nyomtat a selfiebox?</h3>
+      <p>10x15-ös fotópapírra nyomtat.</p>
+      <h3 class="mt-3">2. Önműködő a gép?</h3>
+      <p>
+        A fotóautomata teljes mértékben önműködő, de egy segítő kollégát
+        biztosítunk végig a bérleti idő alatt.
+      </p>
+      <h3 class="mt-3">3. Lehetséges-e kültéri rendezvényre is foglalni?</h3>
+      <p>
+        Természetesen lehetséges, amennyiben egy fedett hely, és a megfelelő
+        áramellátás biztosítva van.
+      </p>
+      <h3 class="mt-3">
+        4. Az elkészült képeket digitális formában is megkapjuk?
+      </h3>
+      <p>
+        Az eseményt követő napokban az összes elkészült képet egy online
+        galériába töltjük fel, amelyhez 10 napig adunk hozzáférést.
+      </p>
+      <h3 class="mt-3">
+        5. Egy alkalommal hányan tudnak egyszerre fotózkodni a gép előtt?
+      </h3>
+      <p>
+        8-10 fő kényelmesen elfér a selfiebox előtt a megfelelő távolságban.
+      </p>
+      <h3 class="mt-3">
+        6. A kiválasztott csomag díjának hány %-át képezi a foglaló?
+      </h3>
+      <p>Szerződéskötésnél foglalóként a csomag árának 50%-át kérjük be.</p>
+    </div>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-container text-center">
+          <div class="inline mx-3"><i class="mt-5 fab fa-instagram fa-2x"></i></div>
+          <div class="inline mx-3"><i class="fab fa-facebook fa-2x"></i></i></div>
+          <div class="inline mx-3"><i class="fab fa-twitter fa-2x"></i></div>
+          <h4 class="fw-light mt-5">Copyright &#169;2022 Minden jog fentartva | Vision Photo Event</h4>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
